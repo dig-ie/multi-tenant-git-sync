@@ -2,12 +2,11 @@ const simpleGit = require("simple-git");
 const git = simpleGit();
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-////teste
 
 async function configureGit(urlClienteComTokenGithub, clienteBranch) {
   try {
-    await git.addConfig("user.name", "usuarioAtualizacao");
-    await git.addConfig("user.email", "debarrosdiego415@gmail.com");
+    await git.addConfig("user.name", "seu-usuario");
+    await git.addConfig("user.email", "seu-e-mail");
     console.log("Configuração do usuário Git concluída.");
 
     if (urlClienteComTokenGithub) {
@@ -160,8 +159,3 @@ async function webhookReceiver(req, res) {
 module.exports = {
   webhookReceiver,
 };
-// ** AJUSTAR O REPOSITORIO NO FINAL DA URL **
-// executarFluxoDeAtualização(
-//   "https://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@github.com/dig-ie/",
-//   "cliente-1"
-// );
