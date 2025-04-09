@@ -8,7 +8,7 @@ O repositório possui a branch `main` que representa o **núcleo do bot**, e mú
 
 Cada cliente possui sua branch implantada separadamente no **Google Cloud Run**, e ao realizar um novo commit na `main`, um **webhook GitHub** aciona esse sistema, que automaticamente:
 
-1. Acessa a branch do cliente.
+1. Após receber o webhook, o endpoint no app do container do cloud run, acessa a branch do cliente.
 2. Faz `merge` das últimas alterações da `main`.
 3. Resolve conflitos automaticamente, priorizando os arquivos da `main`.
 4. Faz `push` forçado para a branch do cliente.
