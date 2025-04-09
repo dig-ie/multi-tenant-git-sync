@@ -1,0 +1,27 @@
+{
+    "name": "multi-tenant-git-sync",
+    "version": "1.0.0",
+    "description": "Script Node.js para sincronizar automaticamente a branch 'main' com branches customizadas de clientes em um ambiente multi-tenant via Webhook.",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "keywords": [
+      "git",
+      "webhook",
+      "multi-tenant",
+      "gcp",
+      "automation",
+      "github",
+      "webhooks",
+      "git-sync"
+    ],
+    "author": "Diêgo de Barros Ferreira",
+    "license": "MIT",
+    "dependencies": {
+      "simple-git": "^3.19.1",
+      "express": "^4.18.2",
+      "dotenv": "^16.3.1"
+    }
+  }
+  
