@@ -1,7 +1,7 @@
 const simpleGit = require("simple-git");
 const git = simpleGit();
 
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 ////teste
 
 async function configureGit(urlClienteComTokenGithub, clienteBranch) {
